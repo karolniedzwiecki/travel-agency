@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OrderOptionNumber = ({name}) => (
+const OrderOptionNumber = () => (
 
   <div>
     OrderOptionNumber
