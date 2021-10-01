@@ -23,8 +23,8 @@ const OrderOption = ({name, type, id, setOrderOption, ...otherProps}) => {
       <div className={styles.component}>
         <h3 className={styles.title}>{name}</h3>
         <OptionComponent
-          {...otherProps}
           setOptionValue={value => setOrderOption({[id]: value})}
+          {...otherProps}
         />
       </div>
     );
