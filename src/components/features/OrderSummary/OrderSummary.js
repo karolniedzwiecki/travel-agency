@@ -5,18 +5,16 @@ import { calculateTotal } from '../../../utils/calculateTotal';
 import { formatPrice } from '../../../utils/formatPrice';
 
 const OrderSummary = ({tripCost, options}) => {
-  const price = calculateTotal(formatPrice(tripCost), options)
+  const price = calculateTotal(formatPrice(tripCost), options);
 
-    // <h2 className={styles.component}>
-    // Total: <strong>$12,345</strong></h2>
-    return (
-      <h2 className={styles.component}>
+  return (
+    <h2 className={styles.component}>
       Total:
       <strong>
        ${price}
       </strong>
-      </h2>
-    );
+    </h2>
+  );
 };
 
 OrderSummary.propTypes = {
