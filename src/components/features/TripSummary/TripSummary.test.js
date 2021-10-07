@@ -47,4 +47,10 @@ describe('Component TripSummary', () => {
     expect(component.find('.tags span').at(1).text()).toEqual(expectedTagTwo);
     expect(component.find('.tags span').at(2).text()).toEqual(expectedTagThree);
   });
+
+  it('should not render div, if props tags is false or is an empty array', () => {
+    const component = shallow(<TripSummary tags={[]}/>);
+    expect(component.find('.tags').exists()).toEqual(false);
+
+  });
 });
