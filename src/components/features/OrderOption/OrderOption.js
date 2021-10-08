@@ -40,7 +40,7 @@ OrderOption.propTypes = {
   name: PropTypes.string,
   type: PropTypes.node,
   id: PropTypes.node,
-  setOrderOption: PropTypes.node,
+  setOrderOption: PropTypes.func,
 };
 
 export default OrderOption;
